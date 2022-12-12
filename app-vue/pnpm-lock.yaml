@@ -8,17 +8,21 @@ specifiers:
   '@vue/cli-plugin-typescript': ~5.0.0
   '@vue/cli-service': ~5.0.0
   '@vue/eslint-config-typescript': ^9.1.0
+  '@webcomponents/webcomponentsjs': ^2.7.0
   core-js: ^3.8.3
   eslint: ^7.32.0
   eslint-plugin-vue: ^8.0.3
   nes-design-system: file:../nes-design-system/nes-design-system-0.0.4.tgz
+  nes-design-system-lit: ../nes-design-system-lit
   typescript: ~4.5.5
   vue: ^3.2.13
   vue-class-component: ^8.0.0-0
 
 dependencies:
+  '@webcomponents/webcomponentsjs': 2.7.0
   core-js: 3.26.1
   nes-design-system: file:../nes-design-system/nes-design-system-0.0.4.tgz
+  nes-design-system-lit: link:../nes-design-system-lit
   vue: 3.2.45
   vue-class-component: 8.0.0-rc.1_vue@3.2.45
 
@@ -2400,6 +2404,10 @@ packages:
       '@webassemblyjs/ast': 1.11.1
       '@xtuc/long': 4.2.2
     dev: true
+
+  /@webcomponents/webcomponentsjs/2.7.0:
+    resolution: {integrity: sha512-j161Z9oiy8k74vchdrQGihfSp7QulrTclCUiPo0D7JF6/RjpXAmB0ThlTAFlSElkgqg0vdFgNAXaX9ZHZy25wQ==}
+    dev: false
 
   /@xtuc/ieee754/1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
