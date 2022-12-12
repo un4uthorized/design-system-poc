@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'nes-design-system-lit/dist/src/nes-design-system-lit'
+
 
 import { applyPolyfills, defineCustomElements } from 'nes-design-system/loader'
 

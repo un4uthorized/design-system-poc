@@ -1,26 +1,32 @@
 import React from 'react';
 import logo from './logo.svg';
+import './App.css';
 
 function App() {
   const [count, setCount] = React.useState(0);
+  const [lit, setLit] = React.useState(0);
 
-  const add = () => {
-    setCount(count + 1);
-  }
-
-  const subtract = () => {
-    setCount(count - 1);
-  }
+  
   return (
-    <div className="App">
+    <div className='app'>
       <div style={{maxWidth: '400px'}}>
         <poc-card text="Stencil Component">
           <div style={{display: 'flex', }}>
-            <poc-button onClick={() => add()} text="+" appearance="primary" />
+            <poc-button onClick={() => setCount(count + 1)} text="+" appearance="primary" />
             <poc-input placeholder="0" value={count}/>
-            <poc-button onClick={() => subtract()} text="-" appearance="primary" />
+            <poc-button onClick={() => setCount(count - 1)} text="-" appearance="primary" />
           </div>
         </poc-card>
+      </div>
+
+      <div style={{maxWidth: '400px'}}>
+        <lit-card text="Lit Component">
+          <div style={{display: 'flex', }}>
+            <lit-button onClick={() => setLit(lit + 1)} text="+" appearance="primary"></lit-button>
+            <lit-input placeholder="0" value={lit}></lit-input>
+            <lit-button onClick={() => setLit(lit - 1)} text="-" appearance="primary"></lit-button>
+          </div>
+        </lit-card>
       </div>
     </div>
   );
