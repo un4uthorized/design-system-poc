@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <link rel="stylesheet" href="/build/nes-design-system.css">
+    <script type="module" src="/build/nes-design-system.esm.js"></script>
+    <script nomodule src="/build/nes-design-system.js"></script>
+  </head>
+  <body>
+    <poc-card text="Stencil Component">
+      <div style="display: flex;">
+          <poc-button id="b" onclick="handleButtonClick()" appearance="primary" text="+"></poc-button>
+          <poc-input placeholder="Write..."></poc-input>
+          <poc-button id="a" onclick="handleButtonClick()" appearance="primary" text="-"></poc-button>
+      </div>
+    </poc-card>
+    
+  
+  </body>
+  <script>
+    function handleButtonClick() {
+      alert('Button clicked!');
+    }
+  </script>
+</html>

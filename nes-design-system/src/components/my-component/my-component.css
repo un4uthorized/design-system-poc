@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.component {
+  color: black;
+}
+
+.component.primary{
+  color: var(--primary);
+}
